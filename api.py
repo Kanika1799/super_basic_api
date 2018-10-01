@@ -31,4 +31,9 @@ def random():
    		 results.append(book)
    return jsonify(results)
 
+@app.route('/books',methods=['get'])
+def all_books():
+	#Returns all the books details
+   return jsonify(books)
+
 app.run()
